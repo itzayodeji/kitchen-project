@@ -1,0 +1,19 @@
+.content_wrapper{background-color: white;} 
+
+.blue{
+	background-color: #29BBBB; 
+	color:#fff;
+
+}
+
+#meals{
+	background-color: white;
+}
+
+.single-meal h2,h4{
+	color:#29BBBB;
+}
+
+.single-meal img{
+	border-radius:100%;
+}
