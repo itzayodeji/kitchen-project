@@ -1,12 +1,55 @@
-.content_wrapper{background-color: white;} 
+a:hover, a:active, a:focus{
+    color:#000;
+}
+.content_wrapper{background-color: white;}
 
 .blue{
-	background-color: #29BBBB; 
+	background-color: #29BBBB;
 	color:#fff;
-
 }
 
-#meals{
+.sidebar-menu>li.header {
+    color: #fff;
+    background: #176F6F;
+    font-size: 1.2em;
+}
+
+
+.navbar-static-top{
+    background-color: #fff;
+    color:#29BBBB;
+}
+.main-header .sidebar-toggle {
+    color:#29BBBB;
+}
+.main-header .sidebar-toggle:hover{
+    color:#f47f32;
+}
+
+.menu-sidebar li a{
+	color:#fff;
+}
+
+.table{
+    color:#000;
+}
+
+#meal-table tr td:nth-child(1){
+    width:5%;
+}
+
+
+#meal-table tr td:nth-child(2){
+    width:30%;
+}
+
+#meal-table tr td:nth-child(3){
+    width:50%;
+}
+
+
+
+#meals {
 	background-color: white;
 }
 
@@ -16,4 +59,8 @@
 
 .single-meal img{
 	border-radius:100%;
+}
+
+.sidebar-menu{
+	color:#fff;
 }
