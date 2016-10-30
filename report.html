@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Kitchen Challenge</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="dist/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect.-->
+  <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+
+
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition blue sidebar-mini">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>A</b>LT</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b>LTE</span>
+    </a>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Alexander Pierce</p>
+          <!-- Status -->
+          <a href="#"><i class="fa fa-circle text-successd"></i> Online</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <ul class="sidebar-menu">
+          <!-- Optionally, you can add icons to the links -->
+          <li class="active"><a href="#"><i class="ion ion-ios-home-outline"></i> <span>Dashboard</span></a></li>
+          <li><a href="#"><i class="fa fa-cutlery"></i> <span>Meals</span></a></li>
+          <li><a href="#"><i class="fa fa-pie-chart"></i> <span>Report</span></a></li>
+          <li><a href="#"><i class="fa fa-plus"></i> <span>Add Meal</span></a></li>
+          <li><a href="#"><i class="fa fa-calendar"></i> <span>Saturday Meal Signups</span></a></li>
+
+
+  <li class="header">Other Information</li>
+  <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Suggestions</span></a></li>
+  <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Price</span></a></li>
+      </ul>
+      <!-- /.sidebar-menu -->
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header" id = "reports">
+      <h1>Weekly Food Orders <small>week 35</small></h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+        <li class="active">Here</li>
+      </ol>
+      <div class="row single-meal"  id="meal-table">
+              <div class="col-md-8 col-sm-12"><!--Colum for report-->
+              <div class="box box-info"><!--Table: Meal reports-->
+              <div class="box-header with-border"><!-- box-header -->
+                <h3 class="box-title">Breakfast</h3>
+              <div class="box-tools pull-right"><!--Tools to change-->
+                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+              </div><!-- End box-header -->
+
+
+              <div class="box-body no-padding">
+                <div class="table-responsive">
+                <table class="table table-striped no-margin">
+                  <tr>
+                  <th>No</th>
+                  <th>Meal</th>
+                  <th>Count</th>
+                  <th>Label</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Bread + Tea</td><!--This would be generated from the Database based on the meals-->
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div><!--This would be change using the figure in database-->
+                    </div>
+                  </td>
+                  <td><span class="badge bg-red">55%</span></td>
+                </tr>
+                <tr>
+                <tr>
+                  <td>1.</td>
+                  <td>Bread + Oat</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">70%</span></td>
+                </tr>
+                <tr>
+                <td>2.</td>
+                <td>Bread + Tea</td><!--This would be generated from the Database based on the meals-->
+                <td>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div><!--This would be change using the figure in database-->
+                  </div>
+                </td>
+                <td><span class="badge bg-red">55%</span></td>
+              </tr>
+                <tr>
+                  <td>2.</td>
+                  <td>Bread + Tom Brown</td><!--This would be generated from the Database based on the meals-->
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 55%"></div><!--This would be change using the figure in database-->
+                    </div>
+                  </td>
+                  <td><span class="badge bg-red">35%</span></td>
+                </tr>
+                  <tr>
+                  <td>3.</td>
+                  <td>Bread + Tea</td><!--This would be generated from the Database based on the meals-->
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-danger" style="width: 55%"></div><!--This would be change using the figure in database-->
+                    </div>
+                  </td>
+                  <td><span class="badge bg-red">55%</span></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td>Bread + Wheat</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">70%</span></td>
+                </tr>
+                <tr>
+                <td>4.</td>
+                <td>Bread + Tea</td><!--This would be generated from the Database based on the meals-->
+                <td>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div><!--This would be change using the figure in database-->
+                  </div>
+                </td>
+                <td><span class="badge bg-red">55%</span></td>
+              </tr>
+                   <tr>
+                  <td>4.</td>
+                  <td>Bread + Maize</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">70%</span></td>
+                </tr>
+                <tr>
+                <td>5.</td>
+                <td>Bread + Tea</td><!--This would be generated from the Database based on the meals-->
+                <td>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div><!--This would be change using the figure in database-->
+                  </div>
+                </td>
+                <td><span class="badge bg-red">55%</span></td>
+              </tr>
+                <tr>
+                  <td>5.</td>
+                  <td>Others</td>
+                  <td>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                    </div>
+                  </td>
+                  <td><span class="badge bg-yellow">70%</span></td>
+                </tr>
+                <tr>
+                </table>
+                </div>
+              </div>
+            </div><!--End box info-->
+
+              <div class="box box-info"><!--Lunch Box -->
+                <div class="box-header with-border"><!-- box-header -->
+                  <h3 class="box-title">Lunch</h3>
+                  <div class="box-tools pull-right"><!--Tools to change-->
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                  </div>
+                </div><!-- /.box-header -->
+
+                <div class="box-body no-padding"><!-- box-body -->
+                  <div class="table-responsive">
+                  <table class="table table-striped">
+                    <tr>
+                      <th>#</th>
+                      <th>Meal</th>
+                      <th>Count</th>
+                      <th>Label</th>
+                    </tr>
+                    <tr>
+                      <td>1.</td>
+                      <td>Banku</td><!--This would be generated from the Database based on the meals-->
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-red">55%</span></td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Kenkey</td>
+                      <td>
+                        <div class="progress progress-xs">
+                          <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-yellow">70%</span></td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Fried Rice and Chicken</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-light-blue">30%</span></td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Fix and squish bugs</td>
+                      <td>
+                        <div class="progress progress-xs progress-striped active">
+                          <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                        </div>
+                      </td>
+                      <td><span class="badge bg-green">90%</span></td>
+                    </tr>
+                  </table>
+                  </div><!-- End Table responsive-->
+                </div>            <!-- box-body -->
+              </div><!---End of the Lunch Box-->
+
+              <div class="box box-info"><!--Dinner Box-->
+              <div class="box-header with-border"><!--box header-->
+              <div class="box-tools pull-right"><!--Tools to change-->
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+              </div>
+                <h3 class="box-title">Dinner</h3>
+
+              </div><!--box header-->
+              <div class="box-body no-padding"> <!-- box-box-->
+                <div class="table-responsive">
+                <table class="table table-striped" id="meal-table">
+                  <tr>
+                    <th>#</th>
+                    <th>Meal</th>
+                    <th>Count</th>
+                    <th>Label</th>
+                  </tr>
+                  <tr>
+                    <td>1.</td>
+                    <td>Banku</td><!--This would be generated from the Database based on the meals-->
+                    <td>
+                      <div class="progress progress-xs">
+                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                      </div>
+                    </td>
+                    <td><span class="badge bg-red">55%</span></td>
+                  </tr>
+                  <tr>
+                    <td>2.</td>
+                    <td>Clean database</td>
+                    <td>
+                      <div class="progress progress-xs">
+                        <div class="progress-bar progress-bar-yellow" style="width: 70%"></div>
+                      </div>
+                    </td>
+                    <td><span class="badge bg-yellow">70%</span></td>
+                  </tr>
+                  <tr>
+                    <td>3.</td>
+                    <td>Cron job running</td>
+                    <td>
+                      <div class="progress progress-xs progress-striped active">
+                        <div class="progress-bar progress-bar-primary" style="width: 30%"></div>
+                      </div>
+                    </td>
+                    <td><span class="badge bg-light-blue">30%</span></td>
+                  </tr>
+                  <tr>
+                    <td>4.</td>
+                    <td>Fix and squish bugs</td>
+                    <td>
+                      <div class="progress progress-xs progress-striped active">
+                        <div class="progress-bar progress-bar-success" style="width: 90%"></div>
+                      </div>
+                    </td>
+                    <td><span class="badge bg-green">90%</span></td>
+                  </tr>
+                </table>
+                </div><!--Table responsive-->
+              </div>            <!-- box-body -->
+            </div>  <!---End of the Dinner Box-->
+
+            </div><!--End of Colum for report-->
+
+            <div class="col-md-4 col-sm-12"><!--Report Printing Nav Section-->
+            <div class="info-box bg-red">
+              <span class="info-box-icon"><i class="ion ion-printer"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Print Details</span>
+                <!-- <span class="info-box-number">114,381</span>
+
+                <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                70% Increase in 30 Days
+                </span> -->
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+
+            <!-- /.info-box -->
+            <div class="info-box bg-green">
+              <span class="info-box-icon"><i class="ion ion-person"></i></span>
+
+              <div class="info-box-content">
+                <span class="info-box-text">Users</span>
+                <span class="info-box-number">64</span>
+
+                <div class="progress">
+                <div class="progress-bar" style="width: 80%"></div>
+                </div>
+                <span class="progress-description">80% Increase in 7 Days </span>
+              </div>
+            <!-- /.info-box-content -->
+            </div>
+          <!-- /.info-box -->
+
+          <div class="info-box bg-yellow">
+            <span class="info-box-icon"><i class="ion ion-ios-pricetag-outline"></i></span>
+
+            <div class="info-box-content">
+              <span class="info-box-text">Inventory</span>
+              <span class="info-box-number">5,200</span>
+
+              <div class="progress">
+              <div class="progress-bar" style="width: 50%"></div>
+              </div>
+              <span class="progress-description"> 50% Increase in 30 Days</span>
+            </div>
+          <!-- /.info-box-content -->
+          </div>
+
+            </div>  <!--End Report Printing Nav Section-->
+
+
+      </div><!--End of the row for Report of meal-->
+
+
+
+    </section>
+
+
+    <!-- /.content -->
+  </div><!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="pull-right hidden-xs">
+      Designed by Team AWEsome
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2016 <a href="#">MEST Kitchen</a>.</strong> All rights reserved.
+  </footer>
+
+
+  <!-- /.control-sidebar -->
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/app.min.js"></script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+</body>
+</html>
